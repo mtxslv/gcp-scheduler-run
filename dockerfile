@@ -21,4 +21,4 @@ RUN pip install -r requirements.txt
 # to be equal to the cores available.
 # Timeout is set to 0 to disable the timeouts of the workers to allow Cloud Run to handle instance scaling.
 #CMD exec gunicorn --bind :8080 --workers 1 --threads 8 --timeout 0 main:app
-ENTRYPOINT ["hypercorn", "api.main:app", "--host", "0.0.0.0", "--port", "8080"]
+ENTRYPOINT ["hypercorn", "api.main:app", "-b", "0.0.0.0:8080"]
