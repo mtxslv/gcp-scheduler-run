@@ -20,3 +20,13 @@ docker run -i -p 8080:8080 hoot
 ```
 
 This way you will deploy your _hoot_ docker image iteratively on port 8080.
+
+# Create a Cloud Scheduler job
+
+...
+
+# REFERENCES
+
+- [Build and push a Docker image with Cloud Build](https://cloud.google.com/build/docs/build-push-docker-image)
+- [Triggering Cloud Run Jobs with Cloud Scheduler](https://codelabs.developers.google.com/cloud-run-jobs-and-cloud-scheduler#3)
+- [Running services on a schedule](https://cloud.google.com/run/docs/triggering/using-scheduler)
