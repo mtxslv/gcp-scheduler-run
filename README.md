@@ -16,7 +16,7 @@ This way you will build a docker image named _hoot_.
 To deploy your docker image run:
 
 ```bash
-docker run -i --name hoot -p 8080:8080 hoot
+docker run -i -p 8080:8080 hoot
 ```
 
 This way you will deploy your _hoot_ docker image iteratively on port 8080.
